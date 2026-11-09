@@ -105,6 +105,16 @@
   }
   @media (prefers-reduced-motion: reduce) { .stamp { animation: none; } }
 
+  /* ---------- блок для заказчиков ---------- */
+  section.customer { padding: 48px 0; }
+  .customer-box {
+    display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap;
+    background: var(--stamp-soft); border-radius: 6px; padding: 32px 36px;
+  }
+  .customer-box h2.sec { margin-bottom: 10px; }
+  .customer-box .sec-lead { margin: 0; max-width: 36em; }
+  .customer-box .btn { flex-shrink: 0; }
+
   /* ---------- разделы ---------- */
   section { padding: 76px 0; border-top: 1px solid var(--rule); }
   h2.sec { font-size: clamp(26px, 3vw, 34px); line-height: 1.15; letter-spacing: -0.015em; margin: 0 0 12px; font-weight: 700; }
@@ -239,6 +249,16 @@
       </figure>
     </div>
 
+    <section class="customer" aria-labelledby="cust-h">
+      <div class="customer-box">
+        <div>
+          <h2 class="sec" id="cust-h">Вы заказчик?</h2>
+          <p class="sec-lead">Все заказы и&nbsp;коммерческие предложения оформляются на&nbsp;нашем основном сайте b2g-portal.ru: выберите товары в&nbsp;каталоге и&nbsp;сформируйте КП онлайн.</p>
+        </div>
+        <a class="btn btn-main" href="https://b2g-portal.ru">Перейти на&nbsp;b2g-portal.ru</a>
+      </div>
+    </section>
+
     <section aria-labelledby="about-h">
       <div class="about">
         <h2 class="sec" id="about-h">Кто мы</h2>
@@ -338,6 +358,7 @@
 
   <footer>
     <p>© 2026 ИП Фомина Е.А., отдел закупок.</p>
+    <p>Заказчикам: основной сайт для заказов и&nbsp;коммерческих предложений — <a href="https://b2g-portal.ru">b2g-portal.ru</a>.</p>
     <p>Если вы не хотите получать от нас запросы коммерческих предложений, напишите на&nbsp;<a href="mailto:zakupki@fomina-zakupki.ru?subject=%D0%9E%D1%82%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F">zakupki@fomina-zakupki.ru</a> — мы исключим ваш адрес из&nbsp;рассылки.</p>
   </footer>
 
